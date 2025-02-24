@@ -16,4 +16,4 @@ The message will come back as a string which you can receive using recv(). You w
   decoded_message = message.decode()
 ```
 ## UML Sequence Diagram
-![UML Diagram](UML Diagram.png)
+![UML Diagram](cs-361-microservice-a/UML Diagram.png)
