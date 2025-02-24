@@ -15,3 +15,5 @@ The message will come back as a string which you can receive using recv(). You w
   message = socket.recv()
   decoded_message = message.decode()
 ```
+## UML Sequence Diagram
+![UML Diagram](UML Diagram.png)
