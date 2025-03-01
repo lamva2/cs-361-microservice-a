@@ -30,8 +30,6 @@ while True:
             with open('verbs.txt', 'r') as verb_file:
                 verbs = verb_file.read().strip().split(', ')
             
-            time.sleep(3)
-            
             # Concatenate randomly selected adjective and verb to make playlist name
             playlist_name = adjectives[rand_num_adjective] + " " + verbs[rand_num_verb]
             
