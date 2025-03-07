@@ -18,9 +18,9 @@ while True:
     if len(message) > 0:
         if message.decode() == "Request random playlist name":
             # Generate random index number for adjectives
-            rand_num_1 = random.randint(0, 99)
+            rand_num_adjective = random.randint(0, 99)
             # Generate random index number for verbs
-            rand_num_2 = random.randint(0, 99)
+            rand_num_verb = random.randint(0, 99)
             
             # Read into adjectives file and create list of adjectives 
             with open('adjectives.txt', 'r') as adjective_file:
@@ -30,10 +30,8 @@ while True:
             with open('verbs.txt', 'r') as verb_file:
                 verbs = verb_file.read().strip().split(', ')
             
-            time.sleep(3)
-            
             # Concatenate randomly selected adjective and verb to make playlist name
-            playlist_name = adjectives[rand_num_1] + " " + verbs[rand_num_2]
+            playlist_name = adjectives[rand_num_adjective] + " " + verbs[rand_num_verb]
             
             # Send playlist name to client
             socket.send_string(playlist_name)
